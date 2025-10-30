@@ -4,8 +4,8 @@ function startClock(){
 
 	function updateTime(){
 		const now = new Date();
-		const date = now.toLocalDateString();
-		const time = now.toLocalTimeString();
+		const date = now.toLocaleDateString();
+		const time = now.toLocaleTimeString();
 		timer.textContent = `${date} ${time}`
 	}
 	updateTime()
